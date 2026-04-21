@@ -10,7 +10,7 @@ The 5-bolt pattern is the standard for trekking and city bikes — found on Shim
 
 ## Features
 
-- **Universal 5-bolt compatibility**: Adjustable slots accommodate common trekking BCD patterns (104mm–130mm)
+- **5-bolt compatibility**: Designed for 130mm BCD cranksets (Shimano classic trekking series)
 - **Parametric design**: All dimensions can be adjusted in the OpenSCAD code
 - **Structural reinforcement**: Diagonal cross-bracing, radial struts, and chord connectors between all five bolt channels
 - **Rotating guard**: Mounts to chainring spider and rotates with cranks
@@ -18,10 +18,8 @@ The 5-bolt pattern is the standard for trekking and city bikes — found on Shim
 
 ## Specifications
 
-> **Note**: Dimensions marked *(est.)* are design targets pending final CAD verification and test fit.
-
 - **Mounting**: 5 × M8 bolts (replaces existing chainring bolts)
-- **Outer diameter**: 220mm *(est.)* — teeth measured at 105mm from center; guard sits just outside
+- **Outer diameter**: 220mm — teeth measured at 105mm from center; guard sits just outside
 - **Inner diameter**: 120mm — crankset body extends 60mm from center and must be cleared entirely
 - **Wall thickness**: 5mm throughout
 - **Bolt channel gap**: 8mm (for M8 bolt shaft)
@@ -32,9 +30,7 @@ The 5-bolt pattern is the standard for trekking and city bikes — found on Shim
 
 ## Design Details
 
-> *Image will be added after CAD is complete.*
-
-<!-- <img src="./images/five-bolt-chain-guard.png" width="500em" /> -->
+<img src="./images/five-bolt-chain-guard.png" width="500em" />
 
 ### Structure
 
@@ -53,7 +49,7 @@ With 5 bolts the struts sit at 72° intervals (vs. 90° for the 4-bolt version).
 
 Traditional chain guards often mount to the frame and require precise measurements for a specific bike. This design:
 1. Mounts directly to the chainring spider (universal mounting point on any 5-bolt crank)
-2. Uses adjustable bolt slots (fits 104mm through 130mm BCD without reprinting)
+2. Uses radial bolt slots for positioning (targets 130mm BCD)
 3. Rotates with cranks (no frame clearance issues)
 4. Provides protection exactly where needed (at the chain/gear interface)
 
@@ -104,17 +100,18 @@ Designed as the trekking companion to the [four-bolt chain guard](../four-bolt-c
 
 ### Target Bikes / Cranksets
 
-- Shimano Alivio FC-M4050 (104mm BCD, 5-bolt)
-- Shimano Acera FC-M3000 (104mm BCD, 5-bolt)
-- Shimano Deore FC-M590 (104mm BCD, 5-bolt)
-- Shimano Trekking FC-T series (110mm BCD, 5-bolt)
+Fits **130mm BCD** cranksets only (see inner diameter note above):
+
+- Shimano FC-T521 (130mm BCD, 5-bolt)
+- Shimano FC-T431 (130mm BCD, 5-bolt)
+- Shimano FC-T4060 (130mm BCD, 5-bolt)
 - Classic road/trekking cranksets (130mm BCD, 5-bolt)
 
 ### Status
 
-- [ ] OpenSCAD source written
-- [ ] STL exported
-- [ ] 3MF exported
+- [x] OpenSCAD source written
+- [x] STL exported
+- [x] 3MF exported
 - [ ] Test print completed
 - [ ] Test fit on bike verified
 
@@ -144,15 +141,15 @@ Designed in OpenSCAD for the open-source 3D printing community. Sister project t
 
 ## Files
 
-- `five-bolt-chain-guard.scad` — OpenSCAD source file (fully parametric) *(pending)*
-- `five-bolt-chain-guard.stl` — Ready-to-print STL file *(pending)*
-- `five-bolt-chain-guard.3mf` — 3MF format (recommended) *(pending)*
-- `scad-code.txt` — Plain-text copy of source for non-OpenSCAD readers *(pending)*
-- `images/five-bolt-chain-guard.png` — Render preview *(pending)*
+- `five-bolt-chain-guard.scad` — OpenSCAD source file (fully parametric)
+- `five-bolt-chain-guard.stl` — Ready-to-print STL file
+- `five-bolt-chain-guard.3mf` — 3MF format (recommended)
+- `scad-code.txt` — Plain-text copy of source for non-OpenSCAD readers
+- `images/five-bolt-chain-guard.png` — Render preview
 
 ---
 
-**Version**: 0.1 (design phase)
+**Version**: 1.0
 **Created**: April 2026
 **Design Tool**: OpenSCAD
 **Platform**: Linux Mint
